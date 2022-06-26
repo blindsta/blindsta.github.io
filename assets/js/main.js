@@ -288,6 +288,15 @@
 		arrows: false,
         adaptiveHeight: true
 	});
+	
+	/* COMUNICACION API*/
+	fetch("https://coopmanager.herokuapp.com/api/forms/requests/", {
+		method: "POST",
+		headers: {
+			"Content-Type": "application/json",
+		},
+		body : contact-form-warp,
+	});
     
      /*--
     Accordion
